@@ -1,0 +1,23 @@
+<!-- <div>
+    <app-sidenav></app-sidenav>
+</div> -->
+
+<mat-sidenav-container class="example-container" *ngIf="shouldRun">
+    <mat-sidenav mode="side" opened>Sidenav content</mat-sidenav>
+    <mat-sidenav-content>Main content</mat-sidenav-content>
+  </mat-sidenav-container>
+  
+  <div *ngIf="!shouldRun">Please open on TravelProject to see result</div>
+
+  
+  <mat-selection-list #categories>
+      <mat-list-option *ngFor="let travel-type of typesOfCategories">
+        {{travel-type}}
+      </mat-list-option>
+    </mat-selection-list>
+    
+    <p>
+      Options selected: {{categories.selectedOptions.selected.length}}
+    </p>
+
+    

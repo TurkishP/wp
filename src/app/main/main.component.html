@@ -1,0 +1,133 @@
+  <div class="img-container" >
+    <div class="container">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Map_of_Korea_blank.svg/2000px-Map_of_Korea_blank.svg.png">
+      <button mat-button class="btn" id="Gwangju" >GwangJu</button>
+      <button mat-button class="btn" id="Jeju">Jeju</button>
+      <button mat-button class="btn" id="Seoul" routerLink="/mypage">Seoul</button>
+      <button mat-button class="btn" id="Busan" >Busan</button>
+      <button mat-button class="btn" id="Pohang" >Pohang</button>
+      <button mat-button class="btn" id="Daegu">Daegu</button>
+      <button mat-button class="btn" id="Kyeongju">Kyeongju</button>
+    </div>
+  </div>
+  
+  <!-- Main Content -->
+  <h1>MUST VISIT</h1>
+  <div class="cards" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center">
+    <mat-card >
+      <mat-card-header routerLink="/detail">
+        <div mat-card-avatar class="header-image"></div>
+        <mat-card-title>대관령</mat-card-title>
+        <mat-card-subtitle>강원도 강릉</mat-card-subtitle>
+      </mat-card-header>
+      <img routerLink="/detail" mat-card-image src="http://cfile233.uf.daum.net/image/1516C8435036A8D2228504" alt="Photo of a Shiba Inu">
+      <mat-card-content>
+        <p>
+          할매국밥<br>
+          7000원 
+          
+        </p>
+      </mat-card-content>
+     
+      <mat-divider></mat-divider>
+      <p>2chanmi: 여기를 첫쨰날에 가쟝</p>
+      <mat-card-actions fxLayout.gt-xs="row" fxLayout.xs="column">
+        <span fxFlex="70%"></span>
+        <mat-icon fxFlex="15%">comment_border</mat-icon>
+        <mat-icon fxFlex="15%">favorite_border</mat-icon>
+      </mat-card-actions>
+    </mat-card>
+    <mat-card>
+      <mat-card-header>
+        <div mat-card-avatar class="header-image"></div>
+        <mat-card-title>Shiba Inu</mat-card-title>
+        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+      <mat-card-content>
+        <p>
+          할매국밥<br>
+          7000원 
+          
+        </p>
+      </mat-card-content>
+     
+      <mat-divider></mat-divider>
+      <p>2chanmi: 여기를 첫쨰날에 가쟝</p>
+      <mat-card-actions fxLayout.gt-xs="row" fxLayout.xs="column">
+        <span fxFlex="70%"></span>
+        <mat-icon fxFlex="15%">comment_border</mat-icon>
+        <mat-icon fxFlex="15%">favorite_border</mat-icon>
+      </mat-card-actions>
+    </mat-card>
+    <mat-card>
+      <mat-card-header>
+        <div mat-card-avatar class="header-image"></div>
+        <mat-card-title>Shiba Inu</mat-card-title>
+        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+      <mat-card-content>
+        <p>
+          할매국밥<br>
+          7000원 
+          
+        </p>
+      </mat-card-content>
+     
+      <mat-divider></mat-divider>
+      <p>2chanmi: 여기를 첫쨰날에 가쟝</p>
+      <mat-card-actions fxLayout.gt-xs="row" fxLayout.xs="column">
+        <span fxFlex="70%"></span>
+        <mat-icon fxFlex="15%">comment_border</mat-icon>
+        <mat-icon fxFlex="15%">favorite_border</mat-icon>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+  
+  
+  <!-- User Preference Selection Area -->
+  <article class = "pref">
+  <div>
+    <mat-form-field class="date-selection">
+      <input matInput [matDatepicker]="picker1" placeholder="Start Date">
+      <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+      <mat-datepicker #picker1></mat-datepicker>
+    </mat-form-field>
+    
+    <mat-form-field>
+      <input matInput [matDatepicker]="picker2" placeholder="End Date">
+      <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+      <mat-datepicker #picker2></mat-datepicker>
+    </mat-form-field>
+  </div>
+  
+  <!-- selections -->
+  <div class="user-tastes">
+    <div>
+      <mat-button-toggle-group name="fontStyle" aria-label="Travel with..">
+          <mat-button-toggle value="Alone">Alone</mat-button-toggle>
+          <mat-button-toggle value="Family">Family</mat-button-toggle>
+          <mat-button-toggle value="Guys">Guys</mat-button-toggle>
+          <mat-button-toggle value="Girls">Girls</mat-button-toggle>
+          <mat-button-toggle value="Girls">Awkward Person</mat-button-toggle>
+        </mat-button-toggle-group>
+  </div>
+  <div>
+      <mat-button-toggle-group name="fontStyle" aria-label="I love doing...">
+          <mat-button-toggle value="Take Photos">Take Photos</mat-button-toggle>
+          <mat-button-toggle value="Eat All Day">Eat All Day</mat-button-toggle>
+          <mat-button-toggle value="Rest">Rest</mat-button-toggle>
+          <mat-button-toggle value="One with Nature">One with Nature</mat-button-toggle>
+        </mat-button-toggle-group>
+      </div>
+          <div>
+              <mat-button-toggle-group name="fontStyle" aria-label="Financially">
+                  <mat-button-toggle value="Take Photos">No money ..</mat-button-toggle>
+                  <mat-button-toggle value="One with Nature">$</mat-button-toggle>
+                  <mat-button-toggle value="Rest">$$</mat-button-toggle>
+                  <mat-button-toggle value="Eat All Day">$$$</mat-button-toggle>
+                </mat-button-toggle-group>
+              </div>
+            </div>
+          </article>

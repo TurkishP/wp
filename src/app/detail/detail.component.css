@@ -1,0 +1,82 @@
+ng-container{
+  margin-top:100px;
+}
+
+.mat-card:not([class*=mat-elevation-z]) {
+    width: 100%;
+}
+ .example-card {
+    /* width: %; */
+    /* margin-left: 150px; */
+    /* margin-top: 50px; */
+    float:left;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+    
+  }
+  .example-container {
+    position: absolute;
+    top: 60px;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+  }
+  
+  .example-sidenav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    background: rgba(255, 0, 0, 0.5);
+  }
+  mat-sidenav{
+      width: 200px;
+  }
+  
+  .example-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .example-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  mat-toolbar{
+    background-color: #E91E63;
+    color: white;
+    margin: 0px 0px 0px 0px;
+    padding:0px;
+    /* position: fixed; */
+    z-index: 200;
+}
+
+input[type=text] {
+    margin-left: 15px;
+    width: 140px;
+    height: 36px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+
+ .navbar{
+    justify-content: space-between;
+}
+
+.picList{
+    width: 1200px;
+    padding-top:100px;
+}
+.review{
+    background: white;
+}

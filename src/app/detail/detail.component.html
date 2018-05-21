@@ -1,0 +1,84 @@
+
+<ng-container>
+<mat-sidenav-container class="example-container">
+        <mat-sidenav mode="side" opened>
+            <mat-list>
+                <h3 mat-subheader>정보</h3>
+                
+                <mat-divider></mat-divider>
+                <h3 mat-subheader>리뷰</h3>
+                
+            </mat-list>
+        </mat-sidenav>
+        <mat-sidenav-content>
+                <mat-card class="example-card">
+                        <mat-card-header>
+                          <div mat-card-avatar class="example-header-image"></div>
+                          <mat-card-title>대관령 양떼목장</mat-card-title>
+                          <mat-card-subtitle>강원 평창</mat-card-subtitle>
+                        </mat-card-header>
+                        <mat-grid-list class="picList" cols="5" rowHeight="200px">
+                                <mat-grid-tile
+                                [colspan]="5"
+                                [rowspan]="4">
+                                <img mat-card-image [src]="mainImg" alt="대관령 양떼 목장">
+                
+                            </mat-grid-tile>
+                                <mat-grid-tile (click)="choice(tile)"
+                                    *ngFor="let tile of tiles"
+                                    [colspan]="tile.cols"
+                                    [rowspan]="tile.rows"
+                                    [style.background]="tile.color">
+                                    {{tile.text}}
+                                    <img mat-card-image [src]="tile.img" alt="대관령 양떼 목장">
+                    
+                                </mat-grid-tile>
+                            </mat-grid-list>
+                        <mat-card-content>
+                            <p><strong><font size="5">위치</font></strong></p>
+                            <p>강원 평창군 대관령면 대관령마루길 483-32 대관령양떼목장 </p>
+                            
+                            <p><strong><font size="5">요금</font></strong></p>
+                            <p>단체(대인/소인/우대): 4000원/3500원/2000원</p>
+                            <p>개인(대인/소인): 5000원/4500원</p>
+
+                            <p><strong><font size="5">설명</font></strong></p>
+                            <p>
+                                대관령양떼목장의 부드러운 능선과 야생 식물로 가득 차있는 습지대는 자연 그대로의 모습을 간직하고 
+                                있기에 더욱 아름답고 신기하기만 합니다. 
+                            </p>
+                            <p>
+                                푸른 초지가 바람에 흔들거리는 아름다운 목장의 능선에서 양들이 한가로이 풀을 뜯고 있는 모습을 
+                                보고 있으면 마치 알프스에 와 있는듯한 착각을 불러 일으키지요. 
+                            </p>
+                            <p>
+                                특히 봄, 여름, 가을, 겨울 그리고 시시각각 변하는 목장의 모습을 통해 자연의 신비로움과 아름다움을 
+                                몸소 느낄 수도 있습니다. 
+                                
+                          </p>
+                        </mat-card-content>
+                        
+                      </mat-card>
+                      <div class="review">
+                      <strong><font size="4" face="맑은 고딕">리뷰</font></strong>
+
+                      <div class="review">
+                              <mat-list>
+                                      <mat-list-item>정말 좋았어요</mat-list-item>
+                                      <mat-divider></mat-divider>
+                                      <mat-list-item>가족이 가기 좋아요</mat-list-item>
+                                      <mat-divider></mat-divider>
+                                      <mat-list-item>날씨가 추워서 조금 힘들었어요</mat-list-item>
+                                    </mat-list>
+                      </div>
+                    </div>
+                    <mat-card-actions>
+                            <button mat-button>LIKE</button>
+                            <button mat-button>SHARE</button>
+                          </mat-card-actions>
+        </mat-sidenav-content>
+      </mat-sidenav-container>
+
+      
+      <!-- <div *ngIf="!shouldRun">Please open on Stackblitz to see result</div> -->
+</ng-container>

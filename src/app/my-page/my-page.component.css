@@ -1,0 +1,35 @@
+
+ h1{
+    margin-left:10%;
+} 
+
+
+h3{
+   margin-left:10%;  
+}
+
+
+mat-card {
+    width: 20%;
+    height: 300px;
+    margin: 10px;
+    background-color: #D1B6E1;
+}
+
+#add-card{
+    background-color: palevioletred;
+}
+
+div{
+    margin-top:10px;
+}
+
+
+mat-tab-group
+{
+    position: absolute;
+    top:80px;
+}
+
+
+

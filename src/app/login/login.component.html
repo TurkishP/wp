@@ -1,0 +1,10 @@
+<!-- <div *ngIf = "!isLoggedIn" > -->
+  <button mat-button (click) = "login()">Login</button>
+<!-- </div> -->
+
+<div *ngIf = "isLoggedIn" >
+  <!-- <button mat-button (click) = "logout()" routerLink="/dashboard">Logout</button>
+  <button mat-button [routerLink]="['/mypage'  ,this.userEmail]">My Page</button>  -->
+  <button mat-button [routerLink]="['/dashboard']">Go Back</button>
+</div>
+<!-- , this.userEmail] -->

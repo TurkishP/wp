@@ -1,0 +1,157 @@
+mat-toolbar{
+    background-color: #E91E63;
+    color: white;
+    margin: 0px 0px 100px 0px;
+    padding-bottom:px;
+    position: fixed;
+    z-index: 200;
+}
+
+#navnav{
+    /* padding-bottom:50px; */
+}
+
+.img {
+    width: 100%;
+    margin-bottom: 18%;
+  }
+  .card-picture {
+    width: 23%;
+    margin-bottom: 2%;
+  }
+  .container {
+    min-height: 100%;
+    width: 100%;
+  }
+  .search-form {
+    width: 90%;
+  }
+
+input[type=text] {
+    margin-left: 15px;
+    width: 140px;
+    height: 36px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: 40%;
+}
+
+.navbar{
+    justify-content: space-between;
+}
+
+.date-selection{
+    padding-left:5%;
+    padding-top:5%;
+}
+
+.user-tastes{
+    padding-left:5%;
+    padding-top:3%;
+}
+
+.content{
+    margin-left: 30px;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+
+  }
+  
+  /* .pref {
+      position: absolute;
+  } */
+  /* Make the image responsive */
+  .container img {
+    /* position: relative; */
+    width: 600px;
+    height: 625px;
+    display: block;
+    padding: 100px 0px 30px 0px;
+    margin-left: 150px;
+    opacity: 0.65;
+  }
+  
+  .img-container{
+    margin: 0px auto 40px auto;
+    background: url(plane2.jpg) no-repeat;
+    background-size: 1550px 100%;
+    width: 100%;
+    
+  }
+    
+  /* Style the button and place it in the middle of the container/image */
+  .container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); */
+    background-color:none;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+#Gwangju {
+    top: 550px;
+    left: 160px;
+}
+
+#Jeju {
+    top: 650px;
+    left: 210px;
+}
+
+#Seoul{
+    top: 380px;
+    left: 280px;
+}
+
+#Daegu{
+    top: 440px;
+    left: 570px;
+}
+
+#Pohang{
+    top: 500px;
+    left: 570px;
+}
+
+#Busan{
+    top: 610px;
+    left: 520px;
+}
+
+#Kyeongju{
+    top: 560px;
+    left: 570px;
+}
+  
+  .container .btn:hover {
+    background-color: #F48FB1;
+  }
+
+  mat-card {
+    max-width: 400px;
+    flex-wrap: wrap;
+    margin: 0px 10px;
+  }
+  
+  .header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+
+  h1{
+      margin-left: 30px;
+  }

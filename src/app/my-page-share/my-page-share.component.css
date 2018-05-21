@@ -1,0 +1,51 @@
+#sharedPostTitle{
+  margin-left: 100px;
+}
+
+
+.header-image {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa-kr2l3c8wcX-rR5bUrlGd1ah0q39qbulYh8HIgoCMhfBCLdZ');
+  background-size: cover;
+}
+
+mat-card {
+    width: 20%;
+    height: 30%;
+    margin: 10px;
+  }
+
+
+  mat-paginator{
+
+    position: center;
+  }
+
+  mat-toolbar{
+    background-color: #E91E63;
+    color: white;
+    margin: 0px 0px 0px 0px;
+    padding:0px;
+    position: fixed;
+    z-index: 200;
+}
+
+input[type=text] {
+    margin-left: 15px;
+    width: 140px;
+    height: 36px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: 40%;
+}
+
+.navbar{
+    justify-content: space-between;
+}
+
+.share{
+  margin-top:0px;
+}

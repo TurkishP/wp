@@ -1,0 +1,20 @@
+<div id="navnav">
+    <mat-toolbar>
+      <mat-toolbar-row class="navbar">
+      <div  class="dash-nonuser">
+        <button mat-button routerLink="/main" id="homepage">THE TRAVELER</button>
+          <!-- <mat-form-field>
+            <input matInput placeholder="Where would you like to go?">
+          </mat-form-field> -->
+        <input type="text" name="search" placeholder="오늘은 어디로 갈까요?">
+        <button mat-button>Explore</button>
+        <button mat-button>Add</button>
+        <button mat-button>Review</button>
+      </div>
+      <div  class="dash-user">
+          <button mat-button routerLink="/mypage">Mypage</button>
+          <button mat-button routerLink="/login">Logout</button>
+      </div>
+      </mat-toolbar-row>
+    </mat-toolbar>
+</div>
